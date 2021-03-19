@@ -1,2 +1,2 @@
-# UGR-SG-Practicas
-Practicas realizadas en la asignatura de Sistemas Gráficos, de la rama de Ingeniería del Software
+# Prácticas de SG
+Prácticas realizadas en el curso 2020/21
