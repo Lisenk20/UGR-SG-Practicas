@@ -6,12 +6,8 @@ import { TrackballControls } from '../libs/TrackballControls.js'
 
 // Clases de mi proyecto
 
-import { MyDiamond } from './MyDiamond.js'
-import { MyHeart } from './MyHeart.js'
-import { MySpades } from './MySpades.js'
-import { MyClub } from './MyClub.js'
-import { MyBarridoClub } from './MyBarridoClub.js'
-import { MyBarridoHeart } from './MyBarridoHeart.js'
+import { MyTaza } from './MyTaza.js'
+
  
 /// La clase fachada del modelo
 /**
@@ -47,29 +43,6 @@ class MyScene extends THREE.Scene {
     // Por último creamos los modelos.
     // El modelo puede incluir su parte de la interfaz gráfica de usuario. Le pasamos la referencia a 
     // la gui y el texto bajo el que se agruparán los controles de la interfaz que añada el modelo.
-    this.diamante = new MyDiamond();
-    this.add (this.diamante);
-    this.diamante.position.x = -10;
-
-    this.corazon = new MyHeart();
-    this.add(this.corazon);
-    this.corazon.position.x = 10;
-
-    this.pica = new MySpades();
-    this.add(this.pica);
-    this.pica.position.y = 10;
-    
-    this.trebol = new MyClub();
-    this.add(this.trebol);
-    this.trebol.position.y = -5;
-
-    this.barridoDiamante = new MyBarridoClub();
-    this.add(this.barridoDiamante);
-    this.barridoDiamante.position.x = 20;
-
-    this.barridoCorazon = new MyBarridoHeart();
-    this.add(this.barridoCorazon);
-    this.barridoCorazon.position.x = -20;
   }
   
   createCamera () {
