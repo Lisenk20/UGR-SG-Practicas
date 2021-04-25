@@ -6,8 +6,7 @@ import { TrackballControls } from '../libs/TrackballControls.js'
 
 // Clases de mi proyecto
 
-import { MyTaza } from './MyTaza.js'
-import { MyTuerca } from './MyTuerca.js'
+import { MyModel } from './MyModel.js'
 
  
 /// La clase fachada del modelo
@@ -35,7 +34,7 @@ class MyScene extends THREE.Scene {
     this.createCamera ();
 
     // Un suelo 
-    //this.createGround ();
+    this.createGround ();
     
     // Y unos ejes. Imprescindibles para orientarnos sobre dónde están las cosas
     this.axis = new THREE.AxesHelper (5);
@@ -44,13 +43,9 @@ class MyScene extends THREE.Scene {
     // Por último creamos los modelos.
     // El modelo puede incluir su parte de la interfaz gráfica de usuario. Le pasamos la referencia a 
     // la gui y el texto bajo el que se agruparán los controles de la interfaz que añada el modelo.
-    this.taza = new MyTaza();
-    this.add(this.taza);
-
-    this.tuerca = new MyTuerca();
-    this.add(this.tuerca);
-    this.tuerca.position.y = 15;
-    
+    this.model = new MyModel();
+    this.add(this.model);
+    this.model.position.y = 0.6;
   }
   
   createCamera () {
