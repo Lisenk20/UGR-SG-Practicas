@@ -94,7 +94,7 @@ class MyRecorrido extends THREE.Object3D{
           .start();
     
           var movimientoIzq = new TWEEN.Tween(origen)
-            .to(destino, 4000) //8 segundos
+            .to(destino, 4000) //4 segundos
             .easing (TWEEN.Easing.Quartic.InOut)
             .onUpdate (function(){
                   var t = origen.p;

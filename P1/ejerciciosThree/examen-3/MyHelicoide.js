@@ -54,12 +54,12 @@ class MyHelicoide extends THREE.Object3D {
         this.pelotaB.rotation.y  += segundos * this.velocidadRotacion;
 
         if(this.subiendo){
-            this.pelotaB.position.y +=  0.02;
+            this.pelotaB.position.y +=  segundos * this.velocidadRotacion;
             if(this.pelotaB.position.y >= 19){
                 this.subiendo = false;
             }
         } else{
-            this.pelotaB.position.y -= 0.02;
+            this.pelotaB.position.y -= segundos * this.velocidadRotacion;
             if(this.pelotaB.position.y <= 1){
                 this.subiendo = true;
             }

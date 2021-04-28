@@ -6,7 +6,7 @@ import { TrackballControls } from '../libs/TrackballControls.js'
 
 // Clases de mi proyecto
 
-import { MyElipse } from './MyElipse.js'
+import { MyPacman } from './MyPacman.js'
 
  
 /// La clase fachada del modelo
@@ -43,7 +43,7 @@ class MyScene extends THREE.Scene {
     // Por último creamos los modelos.
     // El modelo puede incluir su parte de la interfaz gráfica de usuario. Le pasamos la referencia a 
     // la gui y el texto bajo el que se agruparán los controles de la interfaz que añada el modelo.
-    this.model = new MyElipse(this.gui);
+    this.model = new MyPacman();
     this.add(this.model);
   }
   
